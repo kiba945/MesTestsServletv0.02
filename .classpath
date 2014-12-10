@@ -8,5 +8,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/mes jar/javax.servlet.jsp.jar"/>
+	<classpathentry kind="lib" path="C:/mes jar/javax.servlet-3.0.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ProjetGestionCommandes"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

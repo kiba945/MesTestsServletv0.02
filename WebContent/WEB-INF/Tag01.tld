@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE xml>
+	
+
+<taglib>
+<tlib-version>1.0</tlib-version>
+<jsp-version>2.0</jsp-version>
+	
+	<short-name> Example TLD </short-name>
+	
+	<tag>
+	
+		<name>Tag01</name>
+		
+		<tagclass>org.afpa59.patrice.services.servlet.MonTag01</tagclass>
+		
+		<bodycontent>empty</bodycontent>
+	
+	</tag>
+	
+	
+	<tag>
+	
+		<name>Tag02</name>
+		
+		<tagclass>org.afpa59.patrice.services.servlet.MonTag02</tagclass>
+		
+		<bodycontent>empty</bodycontent>
+
+		<attribute>
+			<name> name </name>
+		</attribute>
+	
+	</tag>
+	
+	<tag>
+	
+		<name>Tag03</name>
+		
+		<tagclass>org.afpa59.patrice.services.servlet.MonTag03</tagclass>
+		
+		<bodycontent>JSP</bodycontent>
+
+		<attribute>
+			<name> name </name>
+			<required> true </required>
+		</attribute>
+	
+	</tag>
+	
+	<tag>
+	
+		<name>Tag04</name>
+		
+		<tagclass>org.afpa59.patrice.services.servlet.MonTag04</tagclass>
+		
+		<bodycontent>JSP</bodycontent>
+	
+		<attribute>
+			<name> count </name>
+			<required> true </required>
+		</attribute>
+	
+	</tag>
+	
+	<tag>
+	
+		<name>Tag05</name>
+		
+		<tagclass>org.afpa59.patrice.services.servlet.MonTag05</tagclass>
+		
+		<bodycontent>JSP</bodycontent>
+	
+	</tag>
+	
+	<tag>
+	
+		<name>Tag06</name>
+		
+		<tagclass>org.afpa59.patrice.services.servlet.MonTag06</tagclass>
+		
+		<bodycontent>JSP</bodycontent>
+		
+		<attribute>
+			<name> name </name>
+		</attribute>
+	
+	</tag>
+</taglib>

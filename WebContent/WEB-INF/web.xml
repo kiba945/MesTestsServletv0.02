@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" id="WebApp_ID">
+  <display-name>MesTestsServletv0.02</display-name>
+  <servlet>
+    <description></description>
+    <display-name>AuRevoir</display-name>
+    <servlet-name>AuRevoir</servlet-name>
+    <servlet-class>org.afpa59.patrice.services.servlet.AuRevoir</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>LaServlet</display-name>
+    <servlet-name>LaServlet</servlet-name>
+    <servlet-class>org.afpa59.patrice.services.servlet.LaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>ServletArticle</display-name>
+    <servlet-name>ServletArticle</servlet-name>
+    <servlet-class>org.afpa59.patrice.services.servlet.ServletArticle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuRevoir</servlet-name>
+    <url-pattern>/AuRevoir</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LaServlet</servlet-name>
+    <url-pattern>/LaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletArticle</servlet-name>
+    <url-pattern>/ServletArticle</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
