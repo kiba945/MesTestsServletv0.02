@@ -1,5 +1,7 @@
 <%@page import="com.afpa59.patrice.utils.ConnectionFichiersArticles"%>
 <%@page import="com.afpa59.patrice.service.fichier.ServiceArticle"%>
+<%@page import="com.afpa59.patrice.utils.DateUser"%>
+
 <%@page import="com.afpa59.patrice.donnees.Article"%>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -9,6 +11,7 @@
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="Form.css">
 		<title>JSP OK</title>
 	</head>
 		<body>
@@ -18,6 +21,7 @@
 			<br><br>
 
 			<% ServiceArticle serviceArt = new ServiceArticle(); %>
+			<% DateUser dateJour = new DateUser(); %>
 			
 			<% ConnectionFichiersArticles fichArt; %>
 			<% String nomPhysiqueArticle = "C:/Users/afpa1653/Documents/GitHub/ProjetGestionCommandes/TableArticles"; %>
@@ -33,7 +37,7 @@
 		
 			<br><br>
 			
-			<table border="1" cellpadding="5">
+			<table>
 				<thead>
 					<tr>
 						<th> Code </th>
@@ -57,6 +61,16 @@
 					<% } %>
 					
 				</tbody>
+				
+				<tfoot>
+				
+					<tr>
+						<th colspan="3" align="right" style="font-size: xx-small;">
+							<%= "Copyright © "+ dateJour.getAnnee() %>
+						</th>
+					</tr>
+					
+				</tfoot>
 			
 			</table>
 			
@@ -73,7 +87,7 @@
 			
 			<br><br>
 			
-			<a href='SaisieArticle.html'> Retour Formulaires SaisieArticle</a>");
+			<a href='SaisieArticle.html'> Retour Formulaires SaisieArticle</a>
 			
 <%-- 			<jsp:include page="/ServletPied" > --%>
 <%-- 				<jsp:param name="year" value="2014"/> --%>

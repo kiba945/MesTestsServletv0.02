@@ -55,7 +55,9 @@ public class LaServlet extends HttpServlet {
 		Integer compteur = null;
 
 		response.setContentType("text/html");
+		
 		PrintWriter page = response.getWriter();
+		
 		page.println("<html>");
 		page.println("<head>");
 		page.println("<title> La Servlet </title>");
@@ -76,15 +78,18 @@ public class LaServlet extends HttpServlet {
 		System.out.println("Hauteur du panier: " + compteur);
 
 		ServiceArticle serviceArt = (ServiceArticle) request.getAttribute("ServiceArticle");
+		
+		
+		String type = (String) request.getAttribute("type");
 
+		page.println("Mon type d'entité: "
+		+ type
+		+ "<br><br>");
+		
 		System.out.println(serviceArt.toString());
 		
 		System.out.println("Taille du tableau: " 
 		+ serviceArt.getTabArticle().size());
-		
-//		System.out.println("Code: " + ServiceArt.getCode());
-//		System.out.println("Designation: " + ServiceArt.getDesignation());
-//		System.out.println("Prix: " + ServiceArt.getPrix());
 
 		page.println("<body>");	
 

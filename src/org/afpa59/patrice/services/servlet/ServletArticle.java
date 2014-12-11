@@ -70,6 +70,9 @@ public class ServletArticle extends HttpServlet {
 		String designation = request.getParameter("designation");
 		String prix = request.getParameter("prix");	
 		
+		String type = request.getParameter("type");	
+		
+		
 		if (code != "" && prix != ""){
 			serviceArt.creer(Integer.parseInt(code), designation, Float.parseFloat(prix));
 			fichArt.ecrire(nomPhysiqueArticle);
@@ -89,7 +92,11 @@ public class ServletArticle extends HttpServlet {
 
 		request.setAttribute("ServiceArticle", serviceArt);
 
-
+		request.setAttribute("type", type);
+		
+		System.out.println("type: " + type);
+		System.out.println("designation: " + designation);
+		
 		rd.forward(request, response);
 	}
 
